@@ -1,21 +1,18 @@
 <?php
 class Usuario {
-    public $nome, $login, $email;
+    public $nome, $tel, $email, $msg, $eusou;
     
-    public function __construct($nome,$login,$email) {
+    public function __construct($nome,$tel,$email,$msg,$eusou) {
         $this->nome = $nome;
-        $this->login = $login;
+        $this->tel = $tel;
         $this->email = $email;
+        $this->msg = $msg;
+        $this->eusou = $eusou;
         
     }
 }
 
 
 
-
-
-?>
-
-<?php
 
 

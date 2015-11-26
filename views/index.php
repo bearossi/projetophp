@@ -15,9 +15,8 @@
 	<ul>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/home">Home</a></li>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/index">Nossa história</a></li>
-		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/quemsomos">Quem Somos</a></li>
+		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/vestibular">Vestibular</a></li>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/form">Formulário</a></li>
-		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/listar"></a>Listar</a></li>
 	</ul>
 </nav>
 
@@ -31,6 +30,9 @@ estado.</p>
 
 <p>A sede do Centro Paula Souza está localizada no prédio que era utilizado por essa instituição até a transferência desta para a "Cidade 
 Universitária".</p>
+
+</form>
+
 </main>
 
 <aside>

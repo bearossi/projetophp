@@ -1,7 +1,7 @@
 <?php
 
 class Model extends CI_Model {
-    public function insert(Usuario $usu){
+    public function insert($usu){
         $this->db->insert('Usuario',$usu); //insere registro no bd
         }
     

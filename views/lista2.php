@@ -18,15 +18,15 @@
 	</ul>
 
 
-<h1 id="lis"> Lista de Usuários </h1>
+<h1 id="lis"> Lista de Inscritos </h1>
 
 <?php
- foreach($usuarios as $u){
-     echo "<h3>". "Nome: " .$u->nome. "<h3>";
-     echo "<h3>" . "Telefone: " . $u->tel. "<h3>";
-     echo "<h3>" . "Email: " . $u->email. "<h3>";    
-     echo "<h3>" . "Eu sou: " .$u->eusou. "<h3>"; 
-     echo "<h3>" . "Mensagem: " .$u->msg."<h3><br><br>";
+ foreach($vestibular as $v){
+     echo "<h3>Nome: " . $v->nome. "</h3>";
+     echo "<h3>Telefone: " . $v->rg. "</h3>";
+     echo "<h3>Email: " . $v->unidade. "</h3>";    
+     echo "<h3>Eu sou: " .$v->curso. "</h3><br><br>"; 
+
  	
  }
 ?>

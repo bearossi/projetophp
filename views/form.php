@@ -18,9 +18,8 @@
 	<ul>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/home">Home</a></li>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/index">Nossa história</a></li>
-		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/quemsomos">Quem Somos</a></li>
+		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/vestibular">Vestibular</a></li>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/form">Formulário</a></li>
-		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/listar">Listar</a></li>
 	</ul>
 </nav>
 
@@ -34,10 +33,27 @@
 
 <h3>Dados de usuario:</h3>
 <form action="/index.php/project/doPost" method="POST">
-    Nome: <input type="text" name="nome" id="nome"/>
-    Login: <input type="text" name="login" id="login"/>
-    E-mail: <input type="text" name="email" id="email">
-     <input type="submit" value="OK" onclick="teste()"/>
+    <legend>Informações Pessoais</legend>
+	<label>Nome: </label><input type="text" name="nome" id="nome">
+	<label>E-mail:</label><input type="email" name="email" id="email">
+	<label>Telefone</label><input type="text" name="tel" id="tel"><br><br>
+
+	<label>Eu sou: </label>
+	<select name="eusou" id="eusou">
+		<option selected>--Selecione--</option>
+		<option value="PROFESSOR">Professor</option>
+		<option value="ALUNO">Aluno</option>
+		<option value="FUNCIONARIO">Funcionário</option>
+		<option value="VISITANTE">Visitante</option>
+	</select><br><br>
+	
+	
+	<label>Mensagem: </label><br>
+	<textarea name="msg" id="msg" rows="10" cols="50"></textarea><br><br>
+	
+	<input type="submit" value="Enviar" onclick="teste()">
+	</fieldset>
+    
 </form>
 
 <br><br><br>

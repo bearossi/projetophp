@@ -2,24 +2,16 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/css/estilo.css" />
-	<title>Home</title>
+	<title>Vestibular 2016</title>
 </head>
-
 <body>
 <div id="container">
 <header>
 	<img src="<?php echo base_url(); ?>static/img/logo-fatec.png"></img>
-	<form action="/index.php/aut/login" method="POST" id="login">
-		<label>Login: </label><input type="text" name="login">
-		<label>Senha:</label><input type="password" name="senha">
-		
-		<input type="submit" value="Entrar">
-		
-	</form>
 </header>
 
 <div id="content">
-<nav id="menu">
+<nav>
 	<ul>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/home">Home</a></li>
 		<li><a href="https://projetoy-bearossii.c9.io/index.php/project/index">Nossa história</a></li>
@@ -30,31 +22,30 @@
 
 <main>
 
-<h2>Home</h2>
-
-<p>O Centro Estadual de Educação Tecnológica Paula Souza (CEETEPS) é uma autarquia do governo do estado de São Paulo vinculada à Secretaria de 
-Desenvolvimento Econômico, Ciência e Tecnologia que administra as Escolas Técnicas Estaduais (ETEC) e as Faculdades de Tecnologia (FATEC) do mesmo 
-estado.</p>
-
-<p>A sede do Centro Paula Souza está localizada no prédio que era utilizado por essa instituição até a transferência desta para a "Cidade 
-Universitária".</p>
-
-<form action="/index.php/dep/doPostDep" method="POST">
-	<fieldset><legend>Depoimentos</legend>
-	<label>Nome:</label><input type="text" name="nome"/>
-	<label>Curso:</label>
-		<select name="curso" id="curso">
-		<option selected>Selecione seu curso</option>
+<h2>VESTIBULAR 2016</h2>
+	<h3>Inscreva-se!!</h3>
+	<form action="/index.php/vestibular/doPostVestibular" method="POST">
+		<label>Nome: </label><input type="text" name="nome" id="nome">
+		<label>RG: </label></label><input type="text" name="rg" id="rg"><br><br>
+		<label>Escolha sua unidade: </label>
+	<select name="unidade" id="unidade">
+		<option selected>--Selecione--</option>
+		<option value="santos">Santos</option>
+		<option value="praiagrande">Praia Grande</option>
+		<option value="taquaritinga">Taquaritinga</option>
+		<option value="barueri">Barueri</option>
+	</select><br><br>
+		<label>Escolha seu curso:</label>
+	<select name="curso" id="curso">
+		<option selected>--Selecione--</option>
 		<option value="si">Sistemas para Internet</option>
 		<option value="ads">Análise e Desenvolvimento de Sistemas</option>
 		<option value="log">Logística</option>
 		<option value="gp">Gestão Portuária</option>
-	</select><br><br>
-	<label>Deixe seu depoimento:</label><br>
-	<textarea name="depoimento" rows="11" cols="50"></textarea>
-	<input type="submit" value="Enviar"/>
-	</fieldset>
-</form>
+	</select> 
+		
+	<input type="submit" value="Enviar" onclick="teste2()">	
+	</form>
 
 </main>
 
@@ -70,7 +61,6 @@ De 07/10 até às 15h do dia 11/11/2015 - Inscrições do Processo Seletivo no s
 <p>Mostre seus conhecimentos na Maratona de Programação 2015. Não perca tempo e inscreva-se!</p>
 <a href="#">Leia Mais</a>
 
-
 </aside>
 </div>
 <footer>
@@ -79,6 +69,4 @@ De 07/10 até às 15h do dia 11/11/2015 - Inscrições do Processo Seletivo no s
 
 </div>
 </body>
-
 </html>
-

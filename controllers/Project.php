@@ -7,7 +7,6 @@ class Project extends CI_Controller {
 		$this->load->view('form');
 	}
 
-
     public function index(){
         $this->load->view('index');    
     }
@@ -16,28 +15,18 @@ class Project extends CI_Controller {
         $this->load->view('home');
     }  
 
-    public function quemsomos(){
-        $this->load->view('qs');
+    public function vestibular(){
+        $this->load->view('vest');
     }
-    
     	
 	public function doPost(){
 		require_once APPPATH."models/user.php";
 		$this->load->model('model');
-		$m=$this->model;
-		$m->insert(new Usuario ($_POST["nome"],$_POST["login"],$_POST["email"])); //o nome é o name dentro do form
+		$this->model->insert(new Usuario ($_POST["nome"],$_POST["tel"],$_POST["email"],$_POST["msg"],$_POST["eusou"])); //o nome é o name dentro do form
+		echo "Formulario enviado com sucesso!";
 	}
-    
-  //  public function listar() {
-	//require_once APPPATH."models/user.php";
-	//$this->load->model('model'); //arquivo model.php, dentro de model
-	//$m = $this->model;
-	//$usuarios = $m->searchAll();	//searchAll da select no BD
-	//$data ['usuarios'] = $usuarios;	//array associativo enchendo o data usuarios do BD
-	//$data['outravar'] = 5; //cada dado para ser enviado precisa do $data com a chave
-	//$this->load->view('lista',$data);
-    //}
-    	public function listar(){
+
+	public function listar(){
 		require_once APPPATH."models/user.php";
 		$this->load->model('model');
 		$m=$this->model;
@@ -45,9 +34,6 @@ class Project extends CI_Controller {
 		$data['usuarios'] = $usuarios;
 		$this->load->view('lista',$data);
 		//print_r($usuarios);
-		
-		
-		
 		
 	}
     
